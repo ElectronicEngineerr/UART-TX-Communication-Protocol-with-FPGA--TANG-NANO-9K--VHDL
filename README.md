@@ -58,6 +58,24 @@ Serial communication is frequently used in embedded systems for sending sensor d
 
 A simplified diagram of the system is shown below:
 
+      +---------------------+
+      |   DEBOUNCE_BUTTON   |
+      |    (Button Input)   |
+      +----------+----------+
+                 |
+                 v
+      +---------------------+
+      | TOP_UART_TX_COUNTER|
+      |    (Control/Logic) |
+      +----------+----------+
+                 |
+                 v
+      +---------------------+
+      |  UART_TRANSMITTER  |
+      | (Serial Data Out)  |
+      +----------+----------+
+                 |
+              UART_TX
 
 
 ![UART TX SIMULATION](images/UART_TX_protocol.png)
