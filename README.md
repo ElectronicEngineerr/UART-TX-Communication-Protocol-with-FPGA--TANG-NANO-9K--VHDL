@@ -126,4 +126,8 @@ Below is a HTerm screenshot that verifies our UART transmission is working as in
 ![UART TX SIMULATION](IMAGES/simulation_data_in_CB.png)
 
 ---
+7. **POWER** 
+
+![UART TX SIMULATION](IMAGES/power_summ.png)
+![UART TX SIMULATION](IMAGES/power_det.png)
 
