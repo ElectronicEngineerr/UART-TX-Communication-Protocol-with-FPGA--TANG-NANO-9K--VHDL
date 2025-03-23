@@ -117,6 +117,10 @@ A simplified diagram of the system is shown below:
    - After programming, observe the serial data output on the **UART_TX** line with a USB-UART converter or any UART receiver.  
    - Verify that the debounce functionality is working by pressing the button multiple times. Only a single data packet should be sent per button press if everything is correct.
 
+![UART TX SIMULATION](IMAGES/simulation_data_in_A8_F2.png)
+![UART TX SIMULATION](IMAGES/simulation_data_in_AA.png)
+![UART TX SIMULATION](IMAGES/simulation_data_in_CB.png)
+
 ---
 
 
