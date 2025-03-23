@@ -82,6 +82,10 @@ A simplified diagram of the system is shown below:
               UART_TX
 
 ---
+## HTERM OUTPUTS
+Below is a HTerm screenshot that verifies our UART transmission is working as intended. The software displays the received data in multiple formats (ASCII, Hex, Decimal, and Binary). This confirms that the FPGA is successfully transmitting data over the UART interface at the specified baud rate and configuration, and that the data is accurately received on the host side.
+
+![UART TX SIMULATION](IMAGES/h_term.png)
 
 ## Development Environment
 
