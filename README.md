@@ -116,7 +116,7 @@ Below is a HTerm screenshot that verifies our UART transmission is working as in
 5. **Synthesis and Implementation**  
    - Run Synthesis and then Implementation in Vivado (or GOWIN tools).  
    - Once the bitstream file is generated, program the FPGA board.
-
+      ![UART TX SIMULATION](IMAGES/SYNTHESIS_REPORT.png)
 6. **Testing and Verification**  
    - After programming, observe the serial data output on the **UART_TX** line with a USB-UART converter or any UART receiver.  
    - Verify that the debounce functionality is working by pressing the button multiple times. Only a single data packet should be sent per button press if everything is correct.
