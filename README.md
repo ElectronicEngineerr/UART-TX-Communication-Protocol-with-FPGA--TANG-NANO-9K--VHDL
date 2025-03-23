@@ -2,6 +2,10 @@
 
 This repository contains a **UART (Universal Asynchronous Receiver/Transmitter)** transmitter project implemented in **VHDL** on the **TANG NANO 9K** FPGA. The project covers essential components and functionalities such as sending data triggered by a button input, debouncing the button signal, and serial data transmission via the UART protocol.
 
+
+![UART TX SIMULATION](images/UART_TX_protocol.png)
+
+
 ## Table of Contents
 
 1. [Project Purpose](#project-purpose)  
