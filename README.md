@@ -123,9 +123,3 @@ A simplified diagram of the system is shown below:
 
 ---
 
-
-![UART TX SIMULATION](images/UART_TX_protocol.png)
-![UART TX SIMULATION](images/UART_TX_protocol.png)
-![UART TX SIMULATION](images/UART_TX_protocol.png)
-![UART TX SIMULATION](images/UART_TX_protocol.png)
-![UART TX SIMULATION](images/UART_TX_protocol.png)
