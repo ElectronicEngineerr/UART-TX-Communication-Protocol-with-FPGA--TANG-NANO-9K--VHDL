@@ -77,6 +77,44 @@ A simplified diagram of the system is shown below:
                  |
               UART_TX
 
+---
+
+## Development Environment
+
+- **Vivado**: Used for VHDL coding, synthesis, and implementation.  
+  > NOTE: The Tang Nano 9K is typically from the GOWIN FPGA family. While the example code here is written for Vivado, you may need to use the **GOWIN IDE** or **GOWIN EDA** tools to build and upload the design to the actual Tang Nano 9K hardware. This README focuses on the general VHDL design approach.
+
+- **Language**: VHDL
+
+---
+
+## Setup and Running
+
+1. **Download Project Files**  
+   - Clone this repository or download as a ZIP and extract it locally.
+
+2. **Create a Vivado Project**  
+   - In Vivado, create a new project. (For real hardware testing on Tang Nano 9K, you should use the GOWIN IDE or any GOWIN EDA tools. In Vivado, you can simply target a similar Xilinx device for simulation or conceptual verification.)  
+   - Add the `.vhd` files to your project.
+
+3. **Top-Level Module Configuration**  
+   - Mark `TOP_UART_TX_COUNTER.vhd` as the top module (entity) in the project.  
+   - Assign the clock, button input, and UART_TX output pins to the correct FPGA pins via a constraints (XDC) file or your design's specific pin assignment file.
+
+4. **Baud Rate and Other Parameters**  
+   - Configure parameters like baud rate and clock frequency in `UART_TRANSMITTER.vhd` or in the top-level module.  
+   - For example, for 115200 baud, ensure the correct clock division settings are applied.
+
+5. **Synthesis and Implementation**  
+   - Run Synthesis and then Implementation in Vivado (or GOWIN tools).  
+   - Once the bitstream file is generated, program the FPGA board.
+
+6. **Testing and Verification**  
+   - After programming, observe the serial data output on the **UART_TX** line with a USB-UART converter or any UART receiver.  
+   - Verify that the debounce functionality is working by pressing the button multiple times. Only a single data packet should be sent per button press if everything is correct.
+
+---
+
 
 ![UART TX SIMULATION](images/UART_TX_protocol.png)
 ![UART TX SIMULATION](images/UART_TX_protocol.png)
